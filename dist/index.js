@@ -7120,7 +7120,7 @@ const axios = __nccwpck_require__(7126);
 async function main() {
     try {
         const message = core.getInput('message') || 'Default message';
-        const response = await axios.get('https://dummy.restapiexample.com/api/v1/employee/1');
+        const response = await axios.get('https://jsonplaceholder.typicode.com/todos/1');
         console.log('Message: ', message);
         console.log("axios response: ", response.data);
     } catch (error) {
