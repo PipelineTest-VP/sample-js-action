@@ -1,0 +1,11 @@
+name: 'Sample JS Action'
+description: 'Sample JS Action'
+inputs:
+  message:
+    description: 'Message'
+    required: true
+    default: 'Default message'
+
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
